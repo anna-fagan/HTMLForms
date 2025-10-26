@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="author" content="Anna Fagan">
+        <meta name="robots" content="noindex, nofollow">
+        <link href="style.css" rel="stylesheet" type="text/css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"> 
+        <title>HTML Forms</title>
+    </head>
+    <body>
+        <div class="block">
+            <h1>HTML Template</h1>
+        </div>
+        <form action="results.html" method="GET" class="block">
+            <div class="question">
+                <label for="firstName" class="label">First Name</label>
+                    <input type="text" name="firstName" id="firstName" placeholder="First Name" required
+                    class="input">
+            </div>
+            <div class="question"> 
+                <label for="email" class="label">Email</label>
+                    <input type="email" name="email" id="email" placeholder="Email" required class="input">
+            </div>
+            <div class="question">
+                <label for="age" class="label">Age</label>
+                    <input type="number" name="age" id="age" min="18" max="130" step="2" placeholder="Enter
+                    Age" required class="input">
+            </div>
+            <div class="question">
+                <label for="birthday" class="label">Birthday</label>
+                    <input type="date" name="birthday" id="birthday" required min="2022-01-01" class="input">
+            </div>
+            <div class="question">
+                <label for="phoneNumber" class="label">Phone</label>
+                    <input type="tel" name="phoneNumber" id="phoneNumber" class="input">
+            </div>
+            <div class="question">
+                <div class="label">
+                    Favorite Season
+                </div>
+                <div>
+                    <label for="winter">Winter</label>
+                        <input type="checkbox" name="winter" id="winter" value="Winter">
+                </div>
+                <div>
+                    <label for="summer">Summer</label>
+                        <input type="checkbox" name="summer" id="summer" value="Summer">
+                </div>
+            </div>
+            <div class="question">
+                <label for="username" class="label">Username</label>
+                    <input type="text" name="username" id="username" placeholder="Username" required class="input">
+            </div>
+            <div class="question">
+                <div class="label">
+                    Do you prefer Night time or Daytime
+                </div>
+                <div>
+                    <label for="nightTime">Night Time</label>
+                        <input type="radio" name="nightTime" id="night" value="Night">
+                    <label for="dayTime">Daytime</label>
+                        <input type="radio" name="dayTime" id="day" value="Day">
+                </div>
+            </div>
+            <div class="question">
+                <label for="faveDay" class="label">Favorite Weekday</label>
+                <select name="faveDay" id="faveDay" multiple class="input">
+                    <option value="Monday">Monday</option>
+                    <option value="Tuesday">Tuesday</option>
+                    <option value="Wednesday">Wednesday</option>
+                    <option value="Thursday">Thursday</option>
+                    <option value="Friday">Friday</option>
+                    <option value="Saturday">Saturday</option>
+                    <option value="Sunday">Sunday</option>
+                </select>
+            </div>
+            <div class="question">
+                <label for="password">Password</label>
+                    <input type="password" name="password" id="password" placeholder="Password" required class="input">
+            </div>
+            <div class="question">
+                <label for="opinion" class="label">Tell us what you think</label>
+                <textarea name="opinion" id="opinion" class="input">Tell us what you think</textarea>
+            </div>
+            <div>
+                <button type="reset" class="input">Reset</button>
+                <button type="submit" class="input">Submit</button>
+            </div>
+        </form>
+    </body>
+</html>
